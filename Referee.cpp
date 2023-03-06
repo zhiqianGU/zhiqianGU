@@ -6,6 +6,7 @@ Referee::Referee() {
 
 Player* Referee::refGame(Player* player1, Player* player2)
 {
+
 	if (player1->move == 'P') {
 		return player1;
 	}
@@ -15,5 +16,4 @@ Player* Referee::refGame(Player* player1, Player* player2)
 	if (player1->move == 'S') {
 		return player2;
 	}
-	
 }

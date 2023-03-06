@@ -7,7 +7,7 @@ int main() {
 	Player* computer = new Computer;
 	human->makeMove();
 	if (b.refGame(human, computer) != nullptr) {
-		cout << b.refGame(human, computer) << "Wins!" << endl;
+		cout << b.refGame(human, computer)->getName() << "Wins!" << endl;
 	}
 	else {
 		cout << "It's a tie!" << endl;
