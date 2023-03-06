@@ -1,4 +1,6 @@
 #include "Referee.h"
+#include"Computer.cpp"
+#include"Human.cpp"
 #include <iostream>
 Referee::Referee() {
 
