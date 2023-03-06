@@ -13,7 +13,9 @@ Player* Referee::refGame(Player* player1, Player* player2)
 	else if (player1->move == 'R') {
 		return nullptr;
 	}
-	else(player1->move == 'S');{
+	else if (player1->move == 'S') {
 		return player2;
 	}
+	
+		return 0;
 }
