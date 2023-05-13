@@ -5,7 +5,7 @@
 #include<string>
 class Autocomplete {
 public:
-	std::vector<string> getSuggestions(std::string partialWord)
+	std::vector<std::string> getSuggestions(std::string partialWord);
 		void insert(std::string word);
 private:
 	std::vector<std::string> words;
