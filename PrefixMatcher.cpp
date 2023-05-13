@@ -20,7 +20,7 @@ int PrefixMatcher::selectRouter(std::string networkAddress) {
             routerNumber = i;
         }
     }
-    return routerNumber;
+    return routerNumber+1;
 }
 void PrefixMatcher::insert(std::string address, int routerNumber) {
     addresses.push_back(address);
