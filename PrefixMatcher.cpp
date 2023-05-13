@@ -2,8 +2,8 @@
 int PrefixMatcher::selectRouter(std::string networkAddress) {
 	int longest_match = 0;
 	int routerNumber = 0;
-	for (int i =0 ; i < addresses.length(); i++) {
-		int min = min(networkAddress.length(), addresses.length());
+	for (int i =0 ; i < addresses.size(); i++) {
+		int min = min(networkAddress.length(), addresses.size());
 		int match_length =0;
 		for (int j = 0; j < min; j++)
 		{
