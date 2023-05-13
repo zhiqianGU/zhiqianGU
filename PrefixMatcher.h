@@ -2,7 +2,7 @@
 #define PREFIXMATCHER_H
 #include<vector>
 #include<iostream>
-#include<math>
+#include<cmath>
 class PrefixMatcher {
 public:
 	int selectRouter(std::string networkAddress);
@@ -11,3 +11,4 @@ private:
 	std::vector<std::string> addresses;
 	std::vector<int> numbers;
 }
+#endif
