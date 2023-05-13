@@ -17,12 +17,11 @@ int PrefixMatcher::selectRouter(std::string networkAddress) {
         }
         if (match_length > longest_match) {
             longest_match = match_length;
-            routerNumber = i+1;
+            routerNumber = i;
         }
     }
-    return routerNumber+1;
+    return routerNumber;
 }
-
 void PrefixMatcher::insert(std::string address, int routerNumber) {
     addresses.push_back(address);
     numbers.push_back(routerNumber);
